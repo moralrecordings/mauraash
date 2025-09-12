@@ -426,7 +426,7 @@ PTOnVerb("use", "maura", function ()
         PTActorTalk(maura, "And great dancer.")
         PTActorTalk(ash, "I swear ONE DAY I will meet this person.")
 
-    elseif vars.checked_barrels and not vars.fixed_reactor and not vars.got_reactor_advice then
+    elseif vars.checked_barrels and not vars.reactor_filled and not vars.got_reactor_advice then
         vars.got_reactor_advice = true
         PTActorTalk(ash, "So. The reactor.")
         PTActorTalk(ash, "The one that mostly runs itself, so long as you refill the heavy water.")
@@ -467,7 +467,7 @@ PTOnVerb("use", "maura", function ()
         PTActorTalk(ash, "I'm tilted. The weevils are back.")
         PTActorTalk(maura, "So I gathered! From your bellowing.")
         PTActorTalk(ash, "First chance we get I propose loading up on all the Insectotox we can carry.")
-        if (got_reactor_advice and reactor_filled) then
+        if (vars.got_reactor_advice and vars.reactor_filled) then
             PTActorTalk(maura, "Even before getting a specialist to fix the awful thing you did to make the reactor work?")
             PTActorTalk(ash, "ESPECIALLY before that.")
         end

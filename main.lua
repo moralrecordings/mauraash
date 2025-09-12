@@ -1,5 +1,5 @@
 
-PTSetGameInfo("au.net.moral.mauraash", "1.0.2", "Maura & Ash")
+PTSetGameInfo("au.net.moral.mauraash", "1.0.3", "Maura & Ash")
 
 dofile("sfx.lua")
 dofile("common.lua")
